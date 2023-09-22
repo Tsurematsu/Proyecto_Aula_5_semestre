@@ -1,4 +1,4 @@
-package com.university.proyect_5;
+package com.aula.proyect_5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
