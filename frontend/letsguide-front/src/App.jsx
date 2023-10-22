@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import './App.css';
+import Navbar from './Components/Navbar';
+import Boton from './Components/Boton';
+import Card from './Components/card';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <Navbar />
+      <section className="presentacion">
+        <div className='nombreEmpresa'>
+          <h1>¡LetsGuide!</h1>
+          <div className='parrafobienvenida'>
+          <p>Te llevaremos al siguiente nivel...</p>
+          </div>
+        </div>
+        <div className='botonespresentacion'>
+          <Boton texto='Iniciar sesión' />
+          <Boton texto='Sobre nosotros' />
+        </div>
+      </section>
+      <section className='contenedornosotros'>
+            <div className="imagenlogo">
+              <img src="src/imgs/logofondo.jpg.jpg" alt="" width={500} height={500}/>
+            </div>
+            <div className="contenidonosotros">
+            <h2>¿Quienes Somos?</h2>
+            <p>Somos una compañia que te acompañará en tus experiencias y vivencias inolvidables</p>
+            </div>
+      </section>
+      <section>
+        <div className="resena">
+          Reseñas
+        </div>
+        <div className="contentcards">
+          <div className="card1">
+          <Card titulo = "Eva Elle" contenido='"Gracias por construir esta pagina, la cual me será de mucha ayuda para mis próximos viajes, facilitándome los conocimientos del lugar"'/>
+          <Card titulo = "Eva Elle" contenido='"Gracias por construir esta pagina, la cual me será de mucha ayuda para mis próximos viajes, facilitándome los conocimientos del lugar"'/>
+          <Card titulo = "Eva Elle" contenido='"Gracias por construir esta pagina, la cual me será de mucha ayuda para mis próximos viajes, facilitándome los conocimientos del lugar"'/>
+          </div>
+        </div>
+      </section>
+    </div>
+
   )
 }
 
-export default App
+export default App;
