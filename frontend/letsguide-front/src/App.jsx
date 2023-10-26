@@ -1,15 +1,19 @@
 
 import './App.css';
+import Login from './Components/login';
 import Navbar from './Components/Navbar';
 import Boton from './Components/Boton';
 import Card from './Components/card';
-import Login from './Components/login';
+
 
 function App() {
 
   return (
     <div className="App">
+      <Login />
       <Navbar />
+      <Boton />
+      
       <section className="presentacion">
         <div className='nombreEmpresa'>
           <h1>¡LetsGuide!</h1>
