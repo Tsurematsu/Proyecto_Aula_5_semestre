@@ -9,7 +9,7 @@ export default function NavbarWithCTAButton() {
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Let&apos;s Guide</span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button>¡A darle!</Button>
+        <Button className='bg-indigo-500'>¡A darle!</Button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
